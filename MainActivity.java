@@ -23,11 +23,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         int alpha = (int)(60 * 255.0f);
         View view = findViewById(R.id.MyLayout);
-        //LayoutInflater inflater = (LayoutInflater) getSystemService(LAYOUT_INFLATER_SERVICE);
-        //RelativeLayout overlay = (RelativeLayout) inflater.inflate(R.layout.activity_main, null);
         WindowManager windowManager = (WindowManager) getSystemService(Context.WINDOW_SERVICE);
         assert windowManager != null;
-        //view.setBackgroundColor(Color.argb(alpha,200,200,60));
+        view.setBackgroundColor(Color.argb(alpha,200,200,60));
         WindowManager.LayoutParams layoutParams = new WindowManager.LayoutParams(
                 WindowManager.LayoutParams.MATCH_PARENT,
                 WindowManager.LayoutParams.WRAP_CONTENT,
